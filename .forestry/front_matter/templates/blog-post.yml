@@ -82,3 +82,8 @@ fields:
   config: {}
   template: blog-post
   label: Tags
+- name: updated
+  type: boolean
+  label: Updated
+  description: Has this post been edited or updated
+  default: false
