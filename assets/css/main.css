@@ -1,0 +1,76 @@
+/** ---- */
+/** VARIABLES */
+
+:root {
+  --base-sizing: 62.5%;
+  --font-sizing: 1.5rem;
+  --ff-header: 'Pacifico', cursive;
+  --ff-body: 'Montserrat', sans-serif;
+  --fw-light: 300;
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --clr-dark: hsl(221, 39%, 11%);
+  --clr-dark-o: hsla(221, 39%, 11%, 0.3);
+  --clr-gray: hsl(215, 14%, 34%);
+  --clr-light: hsl(221, 53%, 91%);
+  --clr-accent: hsl(56, 100%, 50%);
+  --clr-primary-1: hsl(215, 100%, 34%);
+  --clr-primary-2: hsl(240, 100%, 70%);
+}
+
+/** ---- */
+/** GENERAL */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--base-sizing);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-size: var(--font-sizing);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-reg);
+  line-height: 1;
+
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+}
+
+/** ---- */
+/** ELEMENTS */
+
+h1,
+h2,
+h3 {
+  font-size: var(--font-sizing);
+  font-family: var(--ff-header);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+/* TRANSFER CODE BELOW to VUE COMPONENT */
+/* TRANSFER CODE BELOW to VUE COMPONENT */

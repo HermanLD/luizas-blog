@@ -1,0 +1,69 @@
+export default {
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
+
+  // Global page headers: https://go.nuxtjs.dev/config-head
+  head: {
+    htmlAttrs: {
+      lang: 'en',
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Thoughts, writing and musings by Luiza Benisano',
+      },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'keywords', content: 'luiza benisano, blog, writer' },
+      { name: 'author', content: 'Luiza Benisano' },
+      {
+        property: 'og:description',
+        content: 'Writings and musings by Luiza Benisano',
+      },
+      { property: 'og:image', content: '' },
+      { property: 'og:url', content: '' },
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'true',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Pacifico&display=swap',
+      },
+    ],
+  },
+
+  // Global CSS: https://go.nuxtjs.dev/config-css
+  css: ['@/assets/css/main.css'],
+
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  plugins: [],
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
+  ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/content
+    '@nuxt/content',
+  ],
+
+  // Content module configuration: https://go.nuxtjs.dev/config-content
+  content: {},
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {},
+}
