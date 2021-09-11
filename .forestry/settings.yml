@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: content/home.yaml
+  label: Home
 - type: directory
   path: content/articles
   label: Articles
@@ -11,9 +14,6 @@ sections:
   match: "**/*"
   templates:
   - blog-post
-- type: document
-  path: content/home.yaml
-  label: Home
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
