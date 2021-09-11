@@ -12,6 +12,7 @@ sections:
   label: Articles
   create: all
   match: "**/*"
+  exclude: README.md
   templates:
   - blog-post
 upload_dir: uploads
