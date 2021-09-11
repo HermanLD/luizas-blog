@@ -15,7 +15,7 @@ sections:
   exclude: README.md
   templates:
   - blog-post
-upload_dir: https://res.cloudinary.com/luiza-benisano-blog/image/upload
+upload_dir: cloudinary://475978679198965:sMwuud2HeRqfrmq8mUzGphOLSuM@luiza-benisano-blog
 public_path: https://res.cloudinary.com/luiza-benisano-blog/image/upload
 front_matter_path: ''
 use_front_matter_path: false
