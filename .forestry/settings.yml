@@ -8,7 +8,7 @@ sections:
   path: content/home.yaml
   label: Home
 - type: directory
-  path: content
+  path: content/articles
   label: Articles
   create: all
   match: "**/*"
