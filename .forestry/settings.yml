@@ -10,7 +10,7 @@ sections:
 - type: directory
   path: content/articles
   label: Articles
-  create: all
+  create: documents
   match: "**/*"
   exclude: README.md
   templates:
