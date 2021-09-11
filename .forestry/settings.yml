@@ -13,8 +13,7 @@ sections:
   create: documents
   match: "**/*"
   exclude: README.md
-  templates:
-  - blog-post
+  new_doc_ext: ".md"
 upload_dir: ''
 public_path: https://res.cloudinary.com/luiza-benisano-blog/image/upload/v1631328158/Posts
 front_matter_path: ''
