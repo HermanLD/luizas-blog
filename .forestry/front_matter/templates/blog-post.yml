@@ -27,7 +27,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: publishDate
+- name: publish_date
   type: datetime
   label: Publish Date
   description: Date updated
@@ -36,7 +36,7 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-- name: postImage
+- name: post_image
   type: textarea
   default: ''
   config:
@@ -46,7 +46,7 @@ fields:
       format: markdown
   label: Post Image
   description: Image for the post.
-- name: postImageAlt
+- name: post_image_alt
   type: textarea
   default: ''
   config:
@@ -55,23 +55,23 @@ fields:
     schema:
       format: markdown
   label: Post Image Alt Text
-- name: orginalPost
+- name: original_post
   type: text
   config:
     required: false
-  label: Orginal Post
+  label: Original Post
   description: Where this post was first posted.
-- name: originalPostLink
+- name: original_post_link
   type: text
   config:
     required: false
   label: Original Post Link
-- name: imageCreditName
+- name: image_credit_name
   type: text
   config:
     required: false
   label: Image Credit Name
-- name: imageCreditLink
+- name: image_credit-link
   type: text
   config:
     required: false
