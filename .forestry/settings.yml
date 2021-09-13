@@ -12,10 +12,10 @@ sections:
   label: Articles
   create: all
   match: "**/*"
-  templates:
-  - blog-post
-upload_dir: uploads
-public_path: "/uploads"
+  exclude: README.md
+  new_doc_ext: md
+upload_dir: ''
+public_path: https://res.cloudinary.com/luiza-benisano-blog/image/upload/v1631328158/Posts
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"

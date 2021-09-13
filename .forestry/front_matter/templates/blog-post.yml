@@ -1,89 +1,102 @@
 ---
-label: Blog post
+label: Blog Post
 hide_body: false
 fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
+    min: 1
+    max: 140
   label: Title
-  description: Title of the post.
+  description: Title of article
 - name: description
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
+    min: 10
+    max: 140
   label: Description
-  description: Short gist of the post.
-- name: date
-  type: datetime
-  label: Date
-  description: Date first published.
+  description: Short description about article
+- name: image
+  type: text
   config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-- name: publishDate
-  type: datetime
-  label: Publish Date
-  description: Date updated
+    required: true
+  label: Image
+  description: Article image
+  default: https://res.cloudinary.com/luiza-benisano-blog/image/upload/v1631328158/Posts/sample.jpg
+- name: image_description
+  type: text
   config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-- name: postImage
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Post Image
-  description: Image for the post.
-- name: postImageAlt
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Post Image Alt Text
-- name: orginalPost
+    required: true
+  label: Image Description
+  description: Used to improve accessibility of images
+  default: A pink flower
+- name: image_credit
   type: text
   config:
     required: false
-  label: Orginal Post
-  description: Where this post was first posted.
-- name: originalPostLink
-  type: text
-  config:
-    required: false
-  label: Original Post Link
-- name: imageCreditName
-  type: text
-  config:
-    required: false
-  label: Image Credit Name
-- name: imageCreditLink
+  label: Image Credit
+  description: Who or where the image is from
+- name: image_credit_link
   type: text
   config:
     required: false
   label: Image Credit Link
-  description: Link to photo credit profile or site.
-- name: tags
-  type: include
-  config: {}
-  template: blog-post
-  label: Tags
-- name: updated
+  description: Link to image owner profile or site
+- name: date_posted
+  type: datetime
+  label: Date Posted
+  description: Date article was originally posted
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  hidden: true
+- name: date_updated
+  type: datetime
+  label: Date Updated
+  description: Recent date that article was edited or updated
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  showOnly:
+    field: is_updated
+    value: true
+- name: is_updated
   type: boolean
-  label: Updated
-  description: Has this post been edited or updated
+  label: Is Updated
+  hidden: false
   default: false
+- name: is_reposted
+  type: boolean
+  label: Is Reposted
+  description: 'If the article was originally post elsewhere '
+- name: original_post
+  type: text
+  config:
+    required: false
+  label: Original Post
+  description: What site original post is from
+  showOnly:
+    field: is_reposted
+    value: true
+- name: original_post_link
+  type: text
+  config:
+    required: false
+  label: Original Post Link
+  description: Link to the original post
+  showOnly:
+    field: is_reposted
+    value: true
+pages:
+- content/articles/if-this-were-a-movie-i-m-not-sure-i-d-be-the-good-guy.md
