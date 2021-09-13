@@ -5,7 +5,8 @@ headerImg: https://images.unsplash.com/photo-1630121773249-5f38d1d5d239?ixid=Mnw
 headerImgAlt: My writing Blog
 imageCreditName: Aedrian
 imageCreditLink: ttps://unsplash.com/@aedrian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-aboutMe: relocated to the U.S. from the Philippines in 2007. She graduated from the
+aboutMe:
+  relocated to the U.S. from the Philippines in 2007. She graduated from the
   University of Nevada, Reno in 2015 with a Bachelor of Arts degree in journalism
   with a minor in digital media. In her free time, Luiza likes to write, go kickboxing,
   spending time with her dog (a golden doodle named Matlock), and listen to music.
