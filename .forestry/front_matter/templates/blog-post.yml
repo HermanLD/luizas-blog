@@ -98,3 +98,5 @@ fields:
   showOnly:
     field: is_reposted
     value: true
+pages:
+- content/articles/if-this-were-a-movie-i-m-not-sure-i-d-be-the-good-guy.md
