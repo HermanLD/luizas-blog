@@ -2,7 +2,7 @@
   <div id="front-page">
     <header
       class="front-page-header"
-      :style="{ backgroundImage: `url(${home.headerImg})` }"
+      :style="{ backgroundImage: `url(${home.header_image})` }"
     >
       <h1 class="front-page-title">
         {{ home.title }}<span class="sub-text">{{ home.subtext }}</span>
@@ -13,11 +13,11 @@
         <!-- FIRST GRID ITEM -->
         <li class="about-me">
           <div>
-            <img class="about-me-img" :src="home.aboutMeImg" />
+            <img class="about-me-img" :src="home.about_me_image" />
           </div>
           <div class="about-me-content">
             <h2 class="header">About Me</h2>
-            <p>{{ home.aboutMe }}</p>
+            <p>{{ home.about_me }}</p>
           </div>
         </li>
         <!-- ARTICLE GRID -->
@@ -30,8 +30,8 @@
             <div>
               <img
                 class="article-item-img"
-                :src="article.postImage"
-                :alt="article.postImageAlt"
+                :src="article.image"
+                :alt="article.image_description"
               />
             </div>
             <div class="article-item-content">
