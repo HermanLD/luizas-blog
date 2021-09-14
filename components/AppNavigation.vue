@@ -2,7 +2,7 @@
   <nav class="app-nav">
     <ul class="app-nav-links">
       <li>
-        <nuxt-link to="/" class="app-nav-link">👻 Luiza Benisano</nuxt-link>
+        <nuxt-link to="/" class="app-nav-link">Luiza Benisano</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -15,6 +15,7 @@ export default {}
 <style>
 .app-nav {
   padding: 2.4rem 0;
+  color: var(--clr-light);
   background-color: var(--clr-primary-1);
 }
 

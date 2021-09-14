@@ -12,6 +12,7 @@
   height: 15rem;
   width: 100%;
   padding: 2.4rem 3.6rem;
+  color: var(--clr-light);
   background-color: var(--clr-primary-1);
 }
 
