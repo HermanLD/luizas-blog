@@ -14,6 +14,9 @@ export default {}
 
 <style>
 .app-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2.4rem 0;
   color: var(--clr-light);
   background-color: var(--clr-primary-1);
