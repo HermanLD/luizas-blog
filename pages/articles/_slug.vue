@@ -3,14 +3,14 @@
     <header class="article-header">
       <h1 class="title">
         <!-- TODO: Create a filter for date -->
-        <span class="title-date">{{ article.publishDate | formatDate }}</span
+        <span class="title-date">{{ article.date_posted | formatDate }}</span
         >{{ article.title }}
       </h1>
       <figure class="image">
         <img
           class="image-core"
-          :src="article.postImage"
-          :alt="article.postImageAlt"
+          :src="article.image"
+          :alt="article.image_description"
         />
       </figure>
     </header>
@@ -19,7 +19,7 @@
     </article>
     <p class="article-attribute">
       Article image credits -
-      <a :href="article.imageCreditLink">{{ article.imageCreditName }}</a>
+      <a :href="article.image_credit_link">{{ article.image_credit }}</a>
     </p>
   </div>
 </template>
