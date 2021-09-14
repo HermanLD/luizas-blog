@@ -11,5 +11,8 @@ is_updated: true
 is_reposted: true
 original_post: Thought Catalog
 original_post_link: https://thoughtcatalog.com/luiza-benisano/2020/12/if-this-were-a-movie-im-not-sure-id-be-the-good-guy/
+tags:
+- Thoughts & Writing
+- Self-improvement
 
 ---
