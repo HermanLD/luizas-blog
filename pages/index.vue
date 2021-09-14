@@ -2,7 +2,7 @@
   <div id="front-page">
     <header
       class="front-page-header"
-      :style="{ backgroundImage: `url(${home.header_image})` }"
+      :style="{ backgroundImage: 'url(' + home.header_image + ')' }"
     >
       <h1 class="front-page-title">
         {{ home.title }}<span class="sub-text">{{ home.subtext }}</span>
